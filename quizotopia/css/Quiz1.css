@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+@keyframes bounceIn {
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+			
+		}
+	}
+  @keyframes translateInA {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      
+    }
+  }
+    body
+    {
+      font-family: 'PT Sans Narrow', sans-serif;
+      background-color: #CAEBF2;
+    }
+    #q
+    {    
+      letter-spacing: 0.1em;
+      animation: bounceIn 0.6s;
+    }
+    #u
+    {  
+      letter-spacing: 0.1em;  
+      animation: bounceIn 1s;
+    }
+    #ia
+    { 
+      letter-spacing: 0.1em;   
+      animation: bounceIn 1.4s;
+    }
+    #z
+    { letter-spacing: 0.1em;   
+      animation: bounceIn 1.8s;
+    }
+    #o
+    { letter-spacing: 0.1em;   
+      animation: bounceIn 2.2s;
+    }
+    #t
+    {    
+      letter-spacing: 0.1em;
+      animation: bounceIn 2.6s;
+    }
+    #o
+    {    
+      letter-spacing: 0.1em;
+      animation: bounceIn 3.0s;
+    }
+    #p
+    {    
+      letter-spacing: 0.1em;
+      animation: bounceIn 3.4s;
+    }
+    #i
+    {    
+      letter-spacing: 0.1em;
+      animation: bounceIn 6s;
+      color: red;
+    }
+    #a
+    {    
+      letter-spacing: 0.1em;
+      animation: bounceIn 4.2s;
+    }
+    div{
+      height: 80%; 
+      width: 100%; 
+      overflow: auto; 
+      margin: auto; 
+      position: absolute; 
+      top: 0; left: 0; bottom: 0; right: 0; 
+      font-size: 70px;
+    }
+ .button {
+    border: none;
+    color: #38003D;
+    width: 150px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 12px 14px;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.buttona {
+    background-color:  white;
+    color: #38003D;
+    border: 2px solid #ff6666;
+}
+.buttonaHis:hover {
+
+    width: 200px;
+    
+}
+	.buttonaGeo:hover
+	{
+		width: 200px;
+	}
+
+	.buttonaMe:hover
+	{
+		width: 200px;
+	}
+
+	.buttonaSci:hover
+	{
+		width: 200px;
+	}
+
+  .buttonaAb:hover
+  {
+    width: 200px;
+  }
+
+    #CA
+    {
+      padding-top: 105px;
+      font-size: 20px;
+      animation: translateInA 4.2s;
+    }
+
+    .buttonaHis
+    {
+    	background-color:  #E37222;
+    	color: black;
+    }
+
+    .buttonaGeo
+    {
+    	background-color: #EBFF00;
+    	color: black;
+
+    }
+
+    .buttonaMe
+    {
+    	background-color: #3CC47C;
+    	color: black;
+
+    }
+
+    .buttonaSci
+    {
+    	background-color: #0375B4;
+    	color: black;
+
+    }
+     .buttonaAb
+    {
+      background-color: #FF3B3F;
+      color: black;
+
+    }

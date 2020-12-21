@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald'); 
+body
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #CAEBF2;
+    font-weight: 900;
+    color: #38003D;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+h1{
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+#rules{
+    width: 60%;
+    top: 150px;
+    margin-left: 20%;
+    z-index: 1;
+}
+#questionA{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionB{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionC{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionD{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionE{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionF{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionG{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionH{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionI{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#questionJ{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 2;
+    font-size: 40px;
+}
+#quesa{
+    font-size: 30px;
+    background-color: yellow;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+span{
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+
+.button {
+    background-color: black ;
+    color: white;
+    width: 150px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 12px 14px;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.buttonaSub
+    {
+        animation: bounceIn 10s;
+        background-color:white;
+        color: black;
+        font-size: 20px;
+        border: 2px solid #00ACEE;
+
+    }
+    .spacer{
+    padding-left: 50px;
+    padding-right: 50px;
+     }
+.buttonaSub:hover
+    {
+        background-color:  #00334d;
+        color:white;
+        width: 150px;
+    }
+
+    #optionA
+    {
+        background-color: yellow;
+        font-size: 40px;
+        width: 200px;
+        text-align: center;
+        height: 100px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    #optionB
+    {
+        background-color: yellow;
+        font-size: 40px;
+        width: 200px;
+        text-align: center;
+        height: 100px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    #optionC
+    {
+        background-color: yellow;
+        font-size: 40px;
+        width: 200px;
+        text-align: center;
+        height: 100px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    #optionD
+    {
+        background-color: yellow;
+        font-size: 40px;
+        width: 200px;
+        text-align: center;
+        height: 100px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    #timers
+{
+    width:15%;
+    margin-left: 80%;
+    margin-right: 10%;
+    font-size: 25px;
+    margin-right: 5%;
+    margin-top: 0%;
+    text-align: left;
+
+}
+#heading
+{
+        margin-right: 50%;
+        margin-left: 39.9999%;
+        width:15%;
+        padding-left: 5%;
+        font-size: 50px;
+    }
