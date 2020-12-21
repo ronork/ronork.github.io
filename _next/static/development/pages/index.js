@@ -9832,7 +9832,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FRohan%2FDesktop%2FPersonal%20Projects%2FrohangroverWebApp%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************************/
@@ -9855,5 +9855,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
