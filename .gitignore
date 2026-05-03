@@ -1,0 +1,8 @@
+node_modules/
+build/
+.cache/
+.env
+.env.local
+.DS_Store
+**/.DS_Store
+size-plugin.json

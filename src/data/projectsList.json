@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "timestamp": {
+        "_seconds": 1514399400,
+        "_nanoseconds": 0
+      },
+      "title": "Samyog",
+      "content": "Samyog is a portal aimed at creating a dynamic nexus of projects and volunteers working for providing free education to underprivileged children. Many educational and other institutes in India are taking a lead in educating such children with the support of passionate volunteers. Though working for an immensely noble cause, these programs often come across tough challenges such as shortage of volunteers and difficulty in reaching out to the masses. Volunteer too, don’t even have any means to easily locate all these projects let alone getting involved in the cumbersome application process. Samyog, with its powerful features aims to counter exactly such challenges, making interaction among the involved parties both simple and meaningful.",
+      "link": "https://github.com/ronork/Samyog/"
+    },
+    {
+      "link": "https://aarithmos.github.io/",
+      "title": "Arithmos",
+      "content": "A website that allows user to search through algorithms, aimed at encouraging users to concentrate on the logic of the problem rather than the syntax of languages.",
+      "timestamp": {
+        "_seconds": 1483036200,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "timestamp": {
+        "_seconds": 1451586600,
+        "_nanoseconds": 0
+      },
+      "title": "To-Do App",
+      "content": "What was once the simple choice between using a notebook, legal pad, or stack of Post-it notes to manage your personal to-do list is now a mind-numbing decision between dozens of to-do apps.\n\nIn this project I made a web based Application using ruby on rails 4.2.6 successfully deployed it using Heroku a cloud application platform. The web-app has the following features: Plain text approach ,Great UI ,Dynamic updation\n\nThis project helped me to learn basics of ruby on rails and efficient use of css/scss for designing the over all layout of the app.",
+      "link": "https://intense-waters-76388.herokuapp.com/"
+    },
+    {
+      "content": "A quiz game designed in the form of a web application.It brings the enjoyable activity of quizzing and the concept of online gaming together. The game requires a player to answer a set of questions from one of the given categories of History, Geography, MELA or Science, in stipulated time. At the end of the game, the player would be awarded points based on his responses.",
+      "link": "/assets/quizotopia/Quiz-Home.html",
+      "timestamp": {
+        "_seconds": 1451413800,
+        "_nanoseconds": 0
+      },
+      "title": "Quizotopia"
+    }
+  ]
+}
