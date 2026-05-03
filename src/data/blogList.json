@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "description": "This article explores how the Node.js module system & CommonJS works and how to effectively require files in a server running on Node JS",
+      "title": "Everything you need to know about \"require\" in NodeJS and maintaining it’s cache.",
+      "timestamp": {
+        "_seconds": 1577817000,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "timestamp": {
+        "_seconds": 1311705000,
+        "_nanoseconds": 0
+      },
+      "title": "Fascinating Paradoxes",
+      "description": "<p>Mathematicians and Physicist sometimes confront problems having two statements that are both true but in general,both cannot be true at the same time.These self-contradicting statements forms a paradox.I first read about them in <a href=\"https://en.wikipedia.org/wiki/Douglas_Hofstadter\"><strong>Douglas Hofstadter’s</strong></a>  Gödel, Escher, Bach: an Eternal Golden Braidand and since then I got more interested in these types of problems.Lets have a look at some of the most enthralling mathematical paradoxes!</p>"
+    },
+    {
+      "timestamp": {
+        "_seconds": 1311013800,
+        "_nanoseconds": 0
+      },
+      "title": "Eratosthenes and the Earth's circumference",
+      "description": "In my last blog I talked about this Greek mathematician <strong>Eratosthenes</strong> and how he worked the famous “Sieve of Eratosthenes” which was the first efficient way to determine which numbers are primes.The sieve is still used in modern number theory.But what still amazes mathematicians is how he was able to calculate the size of the Earth without leaving Egypt which was remakably accurate"
+    },
+    {
+      "title": "Prime Number Sieves",
+      "timestamp": {
+        "_seconds": 1310668200,
+        "_nanoseconds": 0
+      },
+      "description": "<p><strong>Well,we all know what’s prime number</strong>,a whole number greater than 1 whose factors are either one or itself but in this blog I will be writing about Prime Number Sieves which refers to prime number generating algorithms.</p>"
+    },
+    {
+      "timestamp": {
+        "_seconds": 1310495400,
+        "_nanoseconds": 0
+      },
+      "title": "Concept of Xiralback",
+      "description": "<p><strong>We all have played with toys</strong> in our childhood,these toys were generally action figures,barbie dolls,racing cars and as we reached adolescense the toys that we used to get also matured a bit from mere action figures to scientific toys teaching us something new.However my first experience to such a toy was when i visited an eye specialist.<br> <img src=\"https://upload.wikimedia.org/wikipedia/commons/d/d3/Newtons_cradle_animation_book_2.gif\" alt=\"\"></p>"
+    },
+    {
+      "timestamp": {
+        "_seconds": 1309890600,
+        "_nanoseconds": 0
+      },
+      "title": "Amazing Rhombic Dodecahedron!",
+      "description": "The work of the Greek polymath Plato has kept millions of people busy for millennia. A few among them have been mathematicians who have obsessed about Platonic solids, a class of geometric forms that are highly regular and are commonly found in nature."
+    }
+  ]
+}
