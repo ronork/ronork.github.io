@@ -2,6 +2,33 @@
   "data": [
     {
       "timestamp": {
+        "_seconds": 1780497797,
+        "_nanoseconds": 0
+      },
+      "title": "App Icon Generator",
+      "content": "A TypeScript monorepo for generating app icons across various platforms. Features an async job API, a deterministic export engine, and a React-based web UI. Built with Turborepo, Hono, and Cloudflare Workers, integrating Google Gemini for AI-driven icon previews and generations.",
+      "link": "https://aig.ronork.com/"
+    },
+    {
+      "timestamp": {
+        "_seconds": 1777989954,
+        "_nanoseconds": 0
+      },
+      "title": "Retype",
+      "content": "A native macOS menu bar app that rewrites and updates selected text in any application using AI. Features support for multiple providers (Google Gemini, OpenAI, and Anthropic Claude), secure API key storage in macOS Keychain, custom global shortcuts, and accessibility integration.",
+      "link": "https://retype-web-app.pages.dev/"
+    },
+    {
+      "timestamp": {
+        "_seconds": 1777416608,
+        "_nanoseconds": 0
+      },
+      "title": "Intercepto",
+      "content": "A developer tool Chrome Extension (MV3) that maps UI elements to their corresponding API calls. It captures HTTP and WebSocket traffic in real time, lets users inspect elements from a React side panel, and provides capabilities to intercept, mock, and replay response overrides.",
+      "link": "https://chromewebstore.google.com/detail/kpnoaekilgeobgmbnembajffdfpdphfe?utm_source=item-share-cb"
+    },
+    {
+      "timestamp": {
         "_seconds": 1514399400,
         "_nanoseconds": 0
       },

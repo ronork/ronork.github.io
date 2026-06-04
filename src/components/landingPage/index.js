@@ -23,7 +23,7 @@ const AboutMe = () => {
     <div className={`${tc} ${aboutMeContainer} ${ma} ${mtb100} ${mt30}`}>
       <img
         className={`${db} ${brx100} ${ma} ${imgDim}`}
-        src="/assets/images/avatar.webp"
+        src="/assets/images/profile.jpeg"
         alt="My Photo did not not load on your system:("
       />
       <h1 className={pageTitle}>
