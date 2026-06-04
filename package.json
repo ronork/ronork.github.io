@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "preact build",
-    "serve": "preact build && preact serve",
+    "prebuild": "node scripts/build-blog-data.js",
+    "build": "preact build --prerenderUrls prerender-urls.json",
+    "postbuild": "node -e \"require('fs').copyFileSync('build/index.html', 'build/404.html')\"",
+    "serve": "preact build --prerenderUrls prerender-urls.json && preact serve",
     "dev": "preact watch",
     "lint": "eslint src --ext .js,.jsx"
   },
   "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.4",
     "preact-cli": "^3.5.1"
   },
   "dependencies": {
