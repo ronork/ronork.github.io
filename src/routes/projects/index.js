@@ -26,7 +26,7 @@ export default function Projects() {
         className={i === 0 ? `${card} ${first}` : card}
       >
         <h2 dangerouslySetInnerHTML={{ __html: data.title }} />
-        <p className={date}>{getTime(data.timestamp?._seconds || 0)}</p>
+        <p className={date}>{getTime((data.timestamp && data.timestamp._seconds) || 0)}</p>
         <p dangerouslySetInnerHTML={{ __html: data.content }} />
       </div>
     );
