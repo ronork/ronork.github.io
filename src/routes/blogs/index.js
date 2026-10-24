@@ -46,7 +46,27 @@ export default function BlogsList() {
 
   return (
     <>
-      <Helmet title="Blogs" />
+      <Helmet
+        title="Technical Writing | Rohan Grover"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Technical articles by Rohan Grover on JavaScript, Node.js, software engineering, algorithms, and computer science.",
+          },
+          { name: "robots", content: "index, follow, max-image-preview:large" },
+          { property: "og:type", content: "website" },
+          { property: "og:title", content: "Technical Writing | Rohan Grover" },
+          {
+            property: "og:description",
+            content:
+              "Technical articles on JavaScript, Node.js, software engineering, algorithms, and computer science.",
+          },
+          { property: "og:url", content: "https://ronork.com/blogs/" },
+          { property: "og:site_name", content: "Rohan Grover" },
+        ]}
+        link={[{ rel: "canonical", href: "https://ronork.com/blogs/" }]}
+      />
       <BackButton />
       <div className={`${wrapper} ${blogList}`}>
         <div className={top} />
