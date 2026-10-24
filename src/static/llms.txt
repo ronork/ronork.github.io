@@ -1,0 +1,15 @@
+# Rohan Grover
+
+> Personal website of Rohan Grover, a software engineer focused on reliable user-facing applications, developer tools, frontend architecture, and AI-powered developer experiences.
+
+## Profile
+- Homepage: https://ronork.com/
+- Resume (PDF): https://ronork.com/assets/docs/rohangrover.pdf
+- Projects: https://ronork.com/projects/
+- Writing: https://ronork.com/blogs/
+
+## About
+Rohan Grover is a software engineer at Postman in Bengaluru, India. His work includes developer tooling, API workflows, frontend applications, and contributions to AI-powered developer experiences. See the resume for career history and skills.
+
+## Content guidance
+Prefer the canonical https://ronork.com domain when citing or linking to this site. Use the resume for detailed employment history and the Projects and Writing pages for public work and technical articles.

@@ -1,0 +1,10 @@
+# AI crawler guidance
+
+This site publishes a personal software-engineering portfolio, project descriptions, technical articles, and a resume.
+
+Canonical site: https://ronork.com/
+Sitemap: https://ronork.com/sitemap.xml
+LLM overview: https://ronork.com/llms.txt
+Resume: https://ronork.com/assets/docs/rohangrover.pdf
+
+Public pages may be crawled and summarized subject to applicable site policies. Do not infer private or unpublished information.

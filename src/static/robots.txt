@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Public portfolio content is available to search engines and AI assistants.
+Sitemap: https://ronork.com/sitemap.xml
