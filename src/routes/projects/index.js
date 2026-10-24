@@ -26,7 +26,7 @@ export default function Projects() {
         className={i === 0 ? `${card} ${first}` : card}
       >
         <h2 dangerouslySetInnerHTML={{ __html: data.title }} />
-        <p className={date}>{getTime(data.timestamp["_seconds"])}</p>
+        <p className={date}>{getTime(data.timestamp?._seconds || 0)}</p>
         <p dangerouslySetInnerHTML={{ __html: data.content }} />
       </div>
     );
@@ -42,7 +42,27 @@ export default function Projects() {
 
   return (
     <>
-      <Helmet title="Projects" />
+      <Helmet
+        title="Software Projects | Rohan Grover"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Selected software projects by Rohan Grover, including developer tools, AI-powered applications, browser extensions, and open-source work.",
+          },
+          { name: "robots", content: "index, follow, max-image-preview:large" },
+          { property: "og:type", content: "website" },
+          { property: "og:title", content: "Software Projects | Rohan Grover" },
+          {
+            property: "og:description",
+            content:
+              "Explore developer tools, AI-powered applications, browser extensions, and software projects by Rohan Grover.",
+          },
+          { property: "og:url", content: "https://ronork.com/projects/" },
+          { property: "og:site_name", content: "Rohan Grover" },
+        ]}
+        link={[{ rel: "canonical", href: "https://ronork.com/projects/" }]}
+      />
       <BackButton />
       <div className={wrapper}>
         <div className={top} />

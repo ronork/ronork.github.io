@@ -9,9 +9,10 @@ import Helmet from "preact-helmet";
 
 export default function BlogPage({ blogId }) {
   const { card, first, top, content, wrapper, date } = blogStyle;
-
   const blogData = blogJSON[blogId]["data"];
   const wordsPerMinute = 200;
+  const canonicalUrl = `https://ronork.com/blogs/${blogId}/`;
+  const description = blogData.description.replace(/<\/?[^>]+(>|$)/g, "");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -57,123 +58,88 @@ export default function BlogPage({ blogId }) {
     return result;
   };
 
-  const constructPage = () => {
-    return (
-      <div className={`${card} ${first} ${blogStyle["blogPage"]}`}>
-        <h1>{blogData.title}</h1>
-        <p className={date}>
-          {getTime(blogData.timestamp["_seconds"]) + readTime(blogData["content"])}
-        </p>
-        <div
-          style={{ color: "black" }}
-          dangerouslySetInnerHTML={{ __html: blogData.content }}
-        />
-        {getPageLinks() ? (
-          <ul
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              listStyle: "none",
-              padding: "0px",
-              textDecoration: "underline",
-              color: "#db5461",
-            }}
-          >
-            {getPageLinks()}
-          </ul>
-        ) : (
-          ""
-        )}
-      </div>
-    );
+  const constructPage = () => (
+    <div className={`${card} ${first} ${blogStyle["blogPage"]}`}>
+      <h1>{blogData.title}</h1>
+      <p className={date}>
+        {getTime(blogData.timestamp["_seconds"]) + readTime(blogData["content"])}
+      </p>
+      <div
+        style={{ color: "black" }}
+        dangerouslySetInnerHTML={{ __html: blogData.content }}
+      />
+      {getPageLinks() ? (
+        <ul
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            listStyle: "none",
+            padding: "0px",
+            textDecoration: "underline",
+            color: "#db5461",
+          }}
+        >
+          {getPageLinks()}
+        </ul>
+      ) : (
+        ""
+      )}
+    </div>
+  );
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blogData.title,
+    description,
+    datePublished: new Date(blogData.timestamp["_seconds"] * 1000).toISOString(),
+    author: { "@type": "Person", name: "Rohan Grover", url: "https://ronork.com/" },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+    url: canonicalUrl,
+    publisher: { "@type": "Person", name: "Rohan Grover", url: "https://ronork.com/" },
   };
 
   return (
     <>
-      <BackButton backTo={"/blogs"} />
       <Helmet
-        title={blogData.title}
+        title={`${blogData.title} | Rohan Grover`}
         meta={[
-          {
-            name: "description",
-            content: blogData.description.replace(/<\/?[^>]+(>|$)/g, ""),
-          },
+          { name: "description", content: description },
+          { name: "author", content: "Rohan Grover" },
+          { name: "robots", content: "index, follow, max-image-preview:large" },
+          { property: "og:type", content: "article" },
+          { property: "og:title", content: blogData.title },
+          { property: "og:description", content: description },
+          { property: "og:url", content: canonicalUrl },
+          { property: "og:site_name", content: "Rohan Grover" },
+          { name: "twitter:card", content: "summary" },
+          { name: "twitter:title", content: blogData.title },
+          { name: "twitter:description", content: description },
         ]}
+        link={[{ rel: "canonical", href: canonicalUrl }]}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <BackButton backTo={"/blogs"} />
       <div className={wrapper}>
         <div className={top} />
         <div className={content}>{constructPage()}</div>
       </div>
       <Footer />
       <style>{`
-  .blogImg {
-    max-width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-  pre {
-    background: #333;
-    white-space: pre;
-    word-wrap: break-word;
-    overflow: auto;
-  }
-  pre.code {
-    margin: 20px 25px;
-    border-radius: 4px;
-    border: 1px solid #292929;
-    position: relative;
-  }
-  pre.code label {
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    color: #ddd;
-    position: absolute;
-    left: 1px;
-    top: 15px;
-    text-align: center;
-    width: 60px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    pointer-events: none;
-  }
-  pre.code code {
-    display: block;
-    padding: 15px 16px 14px;
-    border-left: 1px solid #555;
-    overflow-x: auto;
-    font-size: 13px;
-    line-height: 19px;
-    color: #ddd;
-  }
-  pre::after {
-    padding: 0;
-    width: auto;
-    height: auto;
-    position: absolute;
-    right: 18px;
-    top: 14px;
-    font-size: 12px;
-    color: #ddd;
-    line-height: 20px;
-    overflow: hidden;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transition: all 0.3s ease;
-  }
-  pre:hover::after {
-    opacity: 0;
-    visibility: visible;
-  }
-  pre.code-css code { color: #91a7ff; }
-  pre.code-html code { color: #aed581; }
-  pre.code-javascript code { color: #f1f1f1; }
-  pre.code-jquery code { color: #4dd0e1; }
-  .highlight { background-color: #ffeb004f; }
-  .dib { display: inline-block; }
-  .fr { float: right; }
-  .fl { float: left; }
+  .blogImg { max-width: 100%; height: auto; padding: 10px; }
+  pre { background: #333; white-space: pre; word-wrap: break-word; overflow: auto; }
+  pre.code { margin: 20px 25px; border-radius: 4px; border: 1px solid #292929; position: relative; }
+  pre.code label { font-family: sans-serif; font-weight: bold; font-size: 13px; color: #ddd; position: absolute; left: 1px; top: 15px; text-align: center; width: 60px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; pointer-events: none; }
+  pre.code code { display: block; padding: 15px 16px 14px; border-left: 1px solid #555; overflow-x: auto; font-size: 13px; line-height: 19px; color: #ddd; }
+  pre::after { padding: 0; width: auto; height: auto; position: absolute; right: 18px; top: 14px; font-size: 12px; color: #ddd; line-height: 20px; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden; transition: all 0.3s ease; }
+  pre:hover::after { opacity: 0; visibility: visible; }
+  pre.code-css code { color: #91a7ff; } pre.code-html code { color: #aed581; } pre.code-javascript code { color: #f1f1f1; } pre.code-jquery code { color: #4dd0e1; }
+  .highlight { background-color: #ffeb004f; } .dib { display: inline-block; } .fr { float: right; } .fl { float: left; }
       `}</style>
     </>
   );

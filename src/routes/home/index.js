@@ -3,6 +3,28 @@ import LandingPage from "../../components/landingPage";
 import Footer from "../../components/footer";
 import Helmet from "preact-helmet";
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Rohan Grover",
+  url: "https://ronork.com/",
+  jobTitle: "Software Engineer",
+  worksFor: { "@type": "Organization", name: "Postman" },
+  sameAs: [
+    "https://github.com/ronork",
+  ],
+  knowsAbout: [
+    "Software Engineering",
+    "Developer Tools",
+    "API Development",
+    "JavaScript",
+    "TypeScript",
+    "Frontend Architecture",
+    "Artificial Intelligence"
+  ],
+  mainEntityOfPage: "https://ronork.com/"
+};
+
 const Home = () => (
   <>
     <Helmet
@@ -15,10 +37,7 @@ const Home = () => (
         },
         { name: "author", content: "Rohan Grover" },
         { name: "robots", content: "index, follow, max-image-preview:large" },
-        {
-          property: "og:type",
-          content: "website",
-        },
+        { property: "og:type", content: "profile" },
         {
           property: "og:title",
           content: "Rohan Grover | Software Engineer, Developer Tools & AI",
@@ -30,6 +49,8 @@ const Home = () => (
         },
         { property: "og:url", content: "https://ronork.com/" },
         { property: "og:site_name", content: "Rohan Grover" },
+        { property: "profile:first_name", content: "Rohan" },
+        { property: "profile:last_name", content: "Grover" },
         { name: "twitter:card", content: "summary" },
         {
           name: "twitter:title",
@@ -42,6 +63,12 @@ const Home = () => (
         },
       ]}
       link={[{ rel: "canonical", href: "https://ronork.com/" }]}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+      }}
     />
     <LandingPage />
     <Footer page="Home" />
