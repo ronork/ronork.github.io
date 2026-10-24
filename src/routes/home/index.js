@@ -12,7 +12,6 @@ const personSchema = {
   worksFor: { "@type": "Organization", name: "Postman" },
   sameAs: [
     "https://github.com/ronork",
-    "https://www.linkedin.com/in/rohangrover/"
   ],
   knowsAbout: [
     "Software Engineering",
